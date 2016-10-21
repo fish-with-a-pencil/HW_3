@@ -118,7 +118,7 @@ Account Bank::getAcct(int j) {
 //  output: none
 void Bank::readAccts() {
      ifstream infile("/Users/jessicamcmahon/Desktop/"
-                     "Program_Input/HW2_Input.txt");
+                     "HW_3/HW2_Input.txt");
      numAccts = 0;
      string first, last, social, aNum, aType;
      double bal;

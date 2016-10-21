@@ -35,7 +35,8 @@ int main() {
      char select;
      
      //sets up the output file and it's precision, then prints a heading
-     ofstream outfile("HW3_Output.txt");
+     ofstream outfile("/Users/jessicamcmahon/Desktop/"
+                      "HW_3/HW3_Output.txt");
      outfile.setf(ios::fixed,ios::floatfield);
      outfile.precision(2);
      outfile << "Name: Jessica McMahon\nOutput for HW 3\n\n";
