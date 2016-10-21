@@ -2,13 +2,107 @@ Name: Jessica McMahon
 Output for HW 3
 
 Initial database:
+Name		SSN		Acct Type	Acct Number		Balance
+
+Jane	Mills	123-24-8872	checking	100			500.00
+
+Noah	West	541-33-0217	CD		101			345.00
+
+Bryan	Kane	321-54-6923	savings		102			0.00
+
+Mary	Pope	445-21-0193	CD		103			12.00
+
+Clark	Kent	003-88-1234	savings		104			5.00
+
+Adam	Brown	672-11-9248	checking	105			1000.00
+
+Luna	Clark	123-45-6789	checking	106			655.00
+
+Action: Withdrawal
+Account Number: 900
+Error.  Account does not exist.
+
+Action: Withdrawal
+Account Number: 100
+Withdrawal amount: 900.00
+Existing balance: $500.00
+Error.  Insufficient funds.
+
+Action: Withdrawal
+Account Number: 100
+Withdrawal amount: -80.00
+Existing balance: $500.00
+Error. Negative withdrawal.
+
+Action: Withdrawal
+Account Number: 100
+Withdrawal amount: 25.00
+Existing balance: $500.00
+Transaction successful.  Balance is now: $475.00
+
+Action: Deposit
+Account Number: 900
+Error.  Account does not exist.
+
+Action: Deposit
+Account Number: 101
+Deposit amount: -90.00
+Existing balance: $345.00
+Error. Negative deposit.
+
+Action: Deposit
+Account Number: 102
+Deposit amount: -80.00
+Existing balance: $0.00
+Error. Negative deposit.
+
+Action: Deposit
+Account Number: 101
+Deposit amount: 35.00
+Existing balance: $345.00
+Transaction successful.  Balance is now: $380.00
+
+Action: Create Account
+Account number: 100
+Error.  Account already exists.
+
+Action: Create Account
+Account number: 110
+Action: Balance Inquiry
+Account Number: 300
+Error.  Account does not exist.
+
+Action: Balance Inquiry
+Account Number: 102
+Balance of account number: 102 is $0.00
+
+Action: Account Inquiry
+Account SSN: 000-00-0000
+Error.  Account does not exist.
+
+Action: Account Inquiry
+Account SSN: 123-45-6789
+This is requested account info:
+
+Name: Luna Clark
+SSN: 123-45-6789
+Acct Num: 106
+Acct Type: checking
+Balance: 655.00
+
+Action: Delete Account
+Account number: 101
+Error.  Account still has a balance.
+
+Action: Delete Account
+Account number: 102
+Account deletion successful.
+
 Name		SSN		Acct Type	Acct Number	Balance
 
-Jane	Mills	123-24-8872	checking	100		500.00
+Jane	Mills	123-24-8872	checking	100		475.00
 
-Noah	West	541-33-0217	CD		101		345.00
-
-Bryan	Kane	321-54-6923	savings		102		0.00
+Noah	West	541-33-0217	CD		101		380.00
 
 Mary	Pope	445-21-0193	CD		103		12.00
 
@@ -18,19 +112,8 @@ Adam	Brown	672-11-9248	checking	105		1000.00
 
 Luna	Clark	123-45-6789	checking	106		655.00
 
-Name		SSN		Acct Type	Acct Number	Balance
+Nina	Jones	111-11-1111	CD		110		800.00
 
-Jane	Mills	123-24-8872	checking	100		500.00
 
-Noah	West	541-33-0217	CD		101		345.00
 
-Bryan	Kane	321-54-6923	savings		102		0.00
-
-Mary	Pope	445-21-0193	CD		103		12.00
-
-Clark	Kent	003-88-1234	savings		104		5.00
-
-Adam	Brown	672-11-9248	checking	105		1000.00
-
-Luna	Clark	123-45-6789	checking	106		655.00
 
